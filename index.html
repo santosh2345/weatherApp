@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather920</title>
+    <link rel="stylesheet" href="custom.css" />
+  </head>
+  <body>
+    <video autoplay muted loop plays-inline id="myVideo">
+      <source src="nature.mp4" type="video/mp4" />
+    </video>
+
+    <iframe
+      src="nature.mp3"
+      allow="autoplay"
+      id="audio"
+      style="display: none"
+    ></iframe>
+
+    <main>
+      <div class="header">
+        <h2>Weather920</h2>
+      </div>
+
+      <div class="actions">
+        <button id="mute" onclick="toggleSound()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="25"
+            height="25"
+            fill="currentColor"
+            class="bi bi-volume-mute-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zm7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"
+            />
+          </svg>
+          <!-- <i class="bi bi-volume-mute-fill"></i> -->
+        </button>
+      </div>
+
+      <div class="weatherinfo">
+        <div class="row">
+          <form id="form" action="">
+            <input
+              type="search"
+              id="search"
+              placeholder="🔍   Search by City name"
+            />
+          </form>
+        </div>
+
+        <div class="row" id="weather"></div>
+      </div>
+    </main>
+
+    <script src="api.js"></script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: #34495e; 
+} */
+
+.weatherinfo{
+    height: 60vh;
+    width: 30%;
+    /* background-color: #00000088; */
+    display: flex;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8%;
+    background: rgba(0, 0, 0, 0.5);
+    word-wrap: break-word;
+}
+#myVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    
+  }
+
+.row{
+    
+    width: 1000px;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+    justify-content: center;
+    margin:10px;
+    font-size: 40px;
+    color: white;
+    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#search{
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 25px;
+    border: 1px solid rgb(177, 170, 170);
+    outline: none;
+    text-align: center;
+    background-color: rgb(44, 41, 41);
+    color: white;
+    background-color:transparent;
+    
+}
+.actions{
+    
+    position: absolute;
+    top:90%;
+    left:5%;
+ 
+}
+#mute{
+
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.header{
+    font-size: small;
+    position: absolute;
+    top:5%;
+    left:5%;
+    color: rgb(172, 170, 170);
+    border: 3px double rgb(172, 170, 170);
+    padding: 5px;
+ 
+}
+
+@media (min-aspect-ratio : 16/9){
+    #myVideo{
+        
+        width: 100%;
+        height: auto;
+      
+    }
+
+}
+/* @media (max-aspect-ratio : 16/9){
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+
+} */
+
+@media only screen and (max-width: 1200px) {
+
+    .weatherinfo{
+        height: 60vh;
+        width: 60%;
+        border-radius: 2.5%;
+        margin-top:0;
+        
+    }
+    #myVideo {
+        position: absolute;
+    right: 0;
+    bottom: 0;
+       
+      }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background:rgb(10, 87, 10);
+      height: 100%;
+      width: auto;
+     
+      
+    }
+    #myVideo {
+        position: absolute;
+        top:-25%;    
+    left: -80%;
+    }
+    
+    
+       
+      
+      .weatherinfo{
+        height: 60vh;
+        width: 80%;
+        border-radius: 2.5%;
+        margin-top:0;
+        
+    }
+    #search{
+        margin-top: 10px;
+        font-size: 18px;
+        width:max-content;
+
+        
+    }  
+    .weatherinfo{
+        margin-top: -35px;
+    } 
+
+   
+}
+  
